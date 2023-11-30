@@ -39,6 +39,13 @@
             </geometry>
             <material name="white"/>
         </visual>
+        <collision>
+            xacro <origin xyz="0.15 0 0.075"/>
+            xacro <geometry>
+                xacro <box size ="0.3 0.3 0.15"/>
+            </geometry>
+            
+        </collision>
     </link>
 
 
@@ -58,6 +65,12 @@
         </geometry>
         <material name="blue"/>
     </visual>
+    <collision>
+        <geometry>
+            <cylinder length="0.04" radius="0.05" />
+        </geometry>
+        
+    </collision>
 </link>
 
 
@@ -76,7 +89,14 @@
         </geometry>
         <material name="blue"/>
     </visual>
+    <collision>
+        <geometry>
+            <cylinder length="0.04" radius="0.05" />
+        </geometry>
+    </collision>
 </link>
+
+ <!-- CASTOR WHEEL -->
 
 <joint name="castor_wheel_joint" type="continuous">
     <parent link="chassis"/>
@@ -85,13 +105,18 @@
     <axis xyz="0 0 1"/>
 </joint>
 
-<link name="left_wheel">
+<link name="castor_wheel">
     <visual>
         <geometry>
             <sphere radius="0.05" />
         </geometry>
         <material name="black"/>
     </visual>
+    <collision>
+        <geometry>
+            <sphere radius="0.05" />
+        </geometry>
+    </collision>
 </link>
 
 
