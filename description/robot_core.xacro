@@ -18,6 +18,10 @@
     xacro <material name="black">
         xacro <color rgba="0 0 0 1"/>
     </material>
+
+    xacro <material name="red">
+        xacro <color rgba="1 0 0 1"/>
+    </material>
     
     <!-- BASE LINK -->
     <link name="base_link">
