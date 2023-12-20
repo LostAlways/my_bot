@@ -11,5 +11,7 @@
 
   xacro:<xacro:include filename="camera.xacro"/>
 
+  xacro:<xacro:include filename="depth_camera.xacro"/>
+
 
 </robot>
